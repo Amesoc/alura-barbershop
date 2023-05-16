@@ -30,30 +30,46 @@
     <main>
         <form>
             <label for="namelastname">Name and Last name</label>
-            <input type="text" id="namelastname" class="input-padron">
+            <input type="text" id="namelastname" class="input-padron" required >
 
             <label for="email">Email</label>
-            <input type="text" id="email" class="input-padron">
+            <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
 
             <label for="telephone">Phone</label>
-            <input type="text" id="telephone" class="input-padron">
+            <input type="tel" id="telephone" class="input-padron" required placeholder="(xx)XXXXXX">
 
             <label for="message">Message</label>
-            <textarea cols="70" rows="10" id="message" class="input-padron"></textarea>
+            <textarea cols="70" rows="10" id="message" class="input-padron" required></textarea>
 
             <div>
                 <p>How do you want us to contact you?</p>
-                <label for="radio-phone"><input type="radio" name="contacto" value="email" id="radio-phone">Email</label>
-               
+                <label for="radio-phone"><input type="radio" name="contacto" value="email"
+                        id="radio-phone">Email</label>
 
-                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Phone</label>
-               
 
-                <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp">Whats App</label>
-                
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Phone</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp" checked>Whats
+                    App</label>
+
             </div>
 
-            <label class="checkbox"><input type="checkbox">Would you like to receive information about the Alura barbershop?</label>
+
+            <div>
+                <p>What time do you prefer to be attended?</p>
+                <select>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Nigth</option>
+                </select>
+
+            </div>
+           
+
+            <label class="checkbox"><input type="checkbox" checked>Would you like to receive information about the Alura
+                barbershop?</label>
             <input type="submit" value="Submit">
 
 
